@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cecil Agyemang - Software Developer & Tech Consultant</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Loading Animation -->
+    <div id="loader" class="loader">
+        <div class="loader-content">
+            <div class="loader-spinner"></div>
+            <p>Loading...</p>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">Cecil<span class="accent">.</span></span>
+            </div>
+            <div class="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#education" class="nav-link">Education</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-controls">
+                <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="gradient-animation"></div>
+            <div class="particles"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-name">Cecil Agyemang</h1>
+                <p class="hero-title">Software Developer | Tech Consultant | Graphic Designer | Content Creator</p>
+                <p class="hero-tagline">"Crafting solutions through design, code, and innovation."</p>
+                <button class="cta-button" onclick="scrollToSection('services')">
+                    <span>View My Work</span>
+                    <i class="fas fa-arrow-down"></i>
+                </button>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I'm Cecil Agyemang — a multidisciplinary tech enthusiast blending creativity and logic to build modern digital experiences. I specialize in <strong>software development</strong>, <strong>web/mobile apps</strong>, and <strong>professional graphic design</strong>. I bring both visual storytelling and technical expertise to every project, with a growing footprint in the world of IoT, robotics, and digital transformation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services section">
+        <div class="container">
+            <h2 class="section-title">What I Do</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Full-Stack Web Development</h3>
+                    <p>Building modern, responsive web applications with cutting-edge technologies.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Mobile App Development</h3>
+                    <p>Creating intuitive mobile experiences for iOS and Android platforms.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>Graphic & Brand Design</h3>
+                    <p>Crafting visual identities and marketing materials that make an impact.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <h3>Video Editing</h3>
+                    <p>Professional video production and post-production services.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3>Tech Consulting</h3>
+                    <p>Strategic technology guidance for businesses and startups.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>Robotics & IoT Programming</h3>
+                    <p>Developing smart solutions for the connected world.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Artificial Intelligence</h3>
+                    <p>Implementing AI solutions to solve complex problems.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section">
+        <div class="container">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-content">
+                <div class="skills-category">
+                    <h3>Programming Languages</h3>
+                    <div class="skill-item">
+                        <span class="skill-name">JavaScript/TypeScript</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Python</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">C++</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="75%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">HTML/CSS</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="95%"></div>
+                        </div>
+                    </div>
+                </div>
+               <div class="skills-category">
+    <h3>Frameworks & Tools</h3>
+
+    <div class="skill-item">
+        <span class="skill-name">React / Next.js</span>
+        <div class="skill-bar">
+            <div class="skill-progress" data-width="88%"></div>
+        </div>
+    </div>
+
+    <div class="skill-item">
+        <span class="skill-name">Node.js / Express</span>
+        <div class="skill-bar">
+            <div class="skill-progress" data-width="82%"></div>
+        </div>
+    </div>
+
+    <div class="skill-item">
+        <span class="skill-name">PostgreSQL / Prisma</span>
+        <div class="skill-bar">
+            <div class="skill-progress" data-width="80%"></div>
+        </div>
+    </div>
+
+    <div class="skill-item">
+        <span class="skill-name">Arduino / Raspberry Pi</span>
+        <div class="skill-bar">
+            <div class="skill-progress" data-width="90%"></div>
+        </div>
+    </div>
+</div>
+
+                 
+                </div>
+                <div class="skills-category">
+                    <h3>Design & Creative</h3>
+                    <div class="skill-item">
+                        <span class="skill-name">Adobe Suite</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="92%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Figma</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="87%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Canva</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="90%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-category">
+                    <h3>Languages</h3>
+                    <div class="language-badges">
+                        <span class="language-badge">English</span>
+                        <span class="language-badge">Ga</span>
+                        <span class="language-badge">Twi</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education section">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>BSc in Computer Engineering</h3>
+                        <h4>Ghana Communication Technology University</h4>
+                        <span class="timeline-date">2024 – Ongoing</span>
+                        <p>Currently pursuing a Bachelor's degree in Computer Engineering, focusing on software development, hardware systems, and emerging technologies.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Science Program</h3>
+                        <h4>Ghana Secondary Technical School</h4>
+                        <span class="timeline-date">2021 – 2023</span>
+                        <p>Completed secondary education with a focus on science and technology, building a strong foundation in mathematics, physics, and computer science.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience section">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Graphic Designer</h3>
+                        <h4>Slake Cottage</h4>
+                        <span class="timeline-date">2024 – 2025</span>
+                        <p>Designed marketing materials and developed brand assets, creating visual identities that effectively communicate brand messages and drive engagement.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Inventory Manager</h3>
+                        <h4>Dominion Ventures</h4>
+                        <span class="timeline-date">2023 – 2024</span>
+                        <p>Managed stock and optimized digital inventory systems, implementing efficient processes that improved accuracy and reduced operational costs.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <p>+233 50 367 0551</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>WhatsApp</h4>
+                            <p>+233 50 531 5667</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p>nk.cil96@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/ceciljayyy" target="_blank" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://t.me/nk_cil1" target="_blank" class="social-link">
+                            <i class="fab fa-telegram"></i>
+                        </a>
+                        <a href="https://www.instagram.com/nk.cil" target="_blank" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://x.com/NK_CIL" target="_blank" class="social-link">
+                            <i class="fab fa-x-twitter"></i>
+                        </a>
+                        <a href="https://www.facebook.com/share/1Gwygzpvhk/" target="_blank" class="social-link">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Cecil Agyemang. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTop" class="scroll-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
